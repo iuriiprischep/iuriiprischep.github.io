@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #F9F9F9;
+}
+
+.content {
+	width:1060px;
+	background-color: #FFFFFF;
+	margin: 0px auto;
+	padding-bottom: 60px;
+}
+
+.logo {
+	padding: 46px;
+}
+
+.main-menu {
+	margin: 0px 46px 46px;
+	height: 40px;
+	background-color: #515151;
+	font: 15px Arial;
+	line-height: 40px;
+	color: white;
+}
+
+.menu-field1, .menu-field3{
+	padding: 0px 50px;
+	display: inline-block;
+}
+
+.side-bar{
+	margin: 0px 46px 180px;
+	font: 15px Arial;
+	width: 240px;
+	color: #656565;
+	border: 1px solid #c8c8c8;
+	border-bottom: 0px solid;
+}
+
+.menu-field2{
+	height: 40px;
+	border-bottom: 1px solid #c8c8c8;
+	line-height: 40px;
+	padding: 0 35px;
+}
+
+.image{
+	float: right;
+	width: 680px;
+	margin-right: 46px;
+	padding: 40px 0px;
+	text-align: center;
+	border: 1px solid #c8c8c8;
+}
+
+.article{
+	padding-left:350px;
+	padding-right: 50px;
+	font: 15px Arial;
+	color: #656565;
+	
+}
+
+footer{
+	margin: 60px 46px 0px;
+	height: 40px;
+	background-color: #E1E1E1;
+	font: 15px Arial;
+	line-height: 40px;
+    color: #2C2C2C;	
+}
+
+#copyright {
+	margin-left: 105px;
+	padding-right: 20px;
+	
+}
+
+/*Затемнение элементов главного меню при наведении курсора*/
+.menu-field1:hover {
+	background-color: #333333;
+	border-right: 1px solid #999999;
+	border-left: 1px solid #999999;
+}
+
+/*Затемнение элементов бокового меню при наведении курсора*/
+.menu-field2:hover {
+	background-color: #f9f9f9;
+}
+
