@@ -53,6 +53,7 @@ a {
 .hat, .main {
 	width: 390px;
 	margin: 1px auto;
+	padding: 15px 0;
 	text-align: center;
 	border: 1px solid;
 	background-color: rgba(0,0,0,0.6);
