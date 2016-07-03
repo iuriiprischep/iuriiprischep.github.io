@@ -11,7 +11,7 @@ body {
 	width: 1215px;
 	height: 1064px;
 	margin: 0 auto;
-	background-image: url(../img/background.png);
+	background-image: url(../IMG/background.png);
 }
 
 ul {
@@ -34,7 +34,7 @@ a {
 }
 
 .menu {
-	background: url(../img/fon_menu.png) repeat-x;
+	background: url(../IMG/fon_menu.png) repeat-x;
 	font-size: 12pt;
 }
 
