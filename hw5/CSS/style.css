@@ -108,6 +108,7 @@ a {
 
 #fbook {
 	height: 40px;
+	line-height: 40px;
 	border-left: 0px;
 	font-size: 24px;
 	font-weight: bold;
@@ -136,7 +137,7 @@ a {
 
 .log_in>div {
 	margin:0 0.5px;
-	background-color: #333399;
+	background-color: #336699;
 	border-top: 1px solid #666;
 	border-left: 1px solid #666;
 	border-radius: 0 6px 6px 0;
