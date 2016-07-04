@@ -8,16 +8,16 @@
 	padding: 0;
 }
 
-body {
-	background: #c0c0c0;
-	font-family: 'Helvetica Neue', Arial;
+html {
+	height: 100%;
 }
 
-.wrapper {
-	width: 1215px;
-	height: 1064px;
-	margin: 0 auto;
-	background-image: url(../IMG/background.png);
+body {
+	height: 100%;
+	font-family: 'Helvetica Neue', Arial;
+	background: url(../IMG/background.png) no-repeat;
+	background-size: cover;
+	overflow: hidden;	
 }
 
 ul {
