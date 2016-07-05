@@ -1,0 +1,38 @@
+* {
+margin: 0;
+padding: 0;	
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 30px 40px;
+	border: 8px solid;
+}
+
+.empty_l {
+	padding: 60px 40px;
+}
+
+.empty_c {
+	padding: 30px 80px;
+}
+
+.red {
+	background-color: red;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.black {
+	background-color: black;
+}
+
+.blue {
+	background-color: blue;
+}
