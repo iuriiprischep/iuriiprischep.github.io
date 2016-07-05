@@ -30,42 +30,46 @@ a {
     color: #60b5ed;
    }
 
-#menu6 a, #menu7 a {
-	color: #fff;
-}
-
-
 .flex-cont {
 	display: flex;
 	justify-content: flex-end;
 }
 
-.flex-cont>div {
-	height: 36px;
-	width: 97px;
-}
-
-#menu6 {
-	width: 115px;
-}
-
-#menu7 {
-	width: 205px;
-	margin-right: 15px; 
-}
-
-#flag {
-	width: 40px;
-}
-
-.menu div {
-	text-align: center;
-	line-height: 36px;
-}
-
 .menu {
-	background: url(../IMG/fon_menu.png) repeat-x;
-	font-size: 12pt;
+	min-width: 795px;
+	height: 36px;
+    background: url(../IMG/fon_menu.png) repeat-x;
+    line-height: 36px;
+    text-align: right;
+}
+.menu ul {
+	padding-right: 20px;
+	float: right;
+}
+
+.menu ul li {
+	float: left;
+}
+
+.menu ul li a {
+	color: #4eabda;
+	display: block;
+	line-height: 36px;
+	font-size: 14px;
+	padding: 0 13px;
+}
+
+.menu ul li:last-child a {
+	background: -webkit-linear-gradient( top, #50afdc, #2e7ac4 );;
+}
+
+.menu ul li:nth-child(n+8) a {
+	color: #fff;
+}
+
+.menu ul li a:hover {
+	color: #fff;
+	background-color: #4eabda;
 }
 
 #v-line {
@@ -74,6 +78,10 @@ a {
 	margin: 2px 0;
 	/*padding: 0px 0.5px;*/
 	background-color: #4eabda;
+}
+
+.menu ul li a span {
+	text-decoration: underline;
 }
 
 .parent {
@@ -195,51 +203,4 @@ border-radius: 4px;
 
 #policy {
 	font-size: 11px;
-}
-
-/*.flex-cont>div:hover {
-	background-color: #4eabda;
-}*/
-
-.menu a:hover {
-	color: #fff;
-	background-color: #4eabda;
-}
-
-#menu6 a:hover, #menu7 a:hover {
-	color: #fff;
-}
-
-.gradient {
-    background: #2e7ac4 url("gradient-bg.png") repeat-x top;
-    -o-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    background: -webkit-gradient(
-        linear,
-        left top, left bottom,
-        from(#50afdc),
-        to(#2e7ac4)
-    );
-    background: -webkit-linear-gradient(
-        top,
-        #50afdc,
-        #2e7ac4
-    );
-    background: -moz-linear-gradient(
-        top,
-        #50afdc,
-        #2e7ac4
-    );
-    background: -o-linear-gradient(
-        top,
-        #50afdc,
-        #2e7ac4
-    );
-    background: linear-gradient(
-        top,
-        #50afdc,
-        #2e7ac4
-    );
 }
