@@ -1,33 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-image: url(../IMG/bgbody.jpg);
 	font: 14px Arial;
 	line-height: 10px;
 }
 
-.container {
+.wrapper {
 	width: 1000px;
 	margin: 0 auto;
-    -webkit-box-shadow: 0px 3px 9px 4px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 3px 9px 4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 3px 9px 4px rgba(0,0,0,0.75);
 	box-shadow: 0px 3px 9px 4px rgba(0,0,0,0.75);
+}
+
+.container {
+
 }
 
 header {
-	width: 1000px;
-	margin: 0 auto;
-	    -webkit-box-shadow: 0px 3px 9px 4px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 3px 9px 4px rgba(0,0,0,0.75);
-	box-shadow: 0px 3px 9px 4px rgba(0,0,0,0.75);
+	height: 213px;
+	position: relative;
+	background-color: #fff;
+	color: #128aa7;
+	line-height: 20px;
+}
+
+.logo {
+	position: relative;
+}
+
+.logo_text {
+	position: absolute;
+	top: 150px;
+	left: 80px;
+	z-index: 100;
+}
+
+header a {
+	text-decoration: none;
+	color: #128aa7;
+}
+
+.contacts {
+	position: absolute;
+	top: 15px;
+	right: 30px;
+}
+
+.countries {
+	position: absolute;
+	bottom: 5px;
+	right: 30px;
+}
+
+.countries ul li {
+	float: left;
+	width: 60px;
+	padding-right: 15px;
+	font-size: 10px;
+	text-align: center;
+}
+
+.countries ul li a:hover,
+.logo_text a:hover {
+	color: red;
+	text-decoration: underline;
 }
 
 /*Выпадающее меню*/
-ul {
+.container ul {
     display: block;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-ul:after {
+.container ul:after {
     display: block;
     content: ' ';
     clear: both;
@@ -109,6 +160,8 @@ footer {
 	font: 12px Arial;
 }
 
-.clearfix {
+.main-block:after {
+	content: " ";
 	clear:both;
+	display: block;
 }
