@@ -3,16 +3,32 @@
 	padding: 0;
 }
 
-body {
+body, html {
 	background-color: #F9F9F9;
+	height: 100%;
 }
 
 .content {
 	width:1060px;
+	height: 93%;
+	padding-bottom: 50px;
+	position: relative;
 	background-color: #FFFFFF;
 	margin: 0px auto;
 	padding-bottom: 60px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
 }
+
+a { 
+	display: block;
+    text-decoration: none;
+ }
+
+ li {
+ 	list-style: none;
+ }
 
 .logo {
 	padding: 46px;
@@ -22,30 +38,38 @@ body {
 	margin: 0px 46px 46px;
 	height: 40px;
 	background-color: #515151;
-	font: 15px Arial;
+	font: 16px Arial;
 	line-height: 40px;
 	color: white;
+
 }
 
-.menu-field1, .menu-field3{
-	padding: 0px 50px;
-	display: inline-block;
+.main-menu ul li {
+	float: left;
+}
+
+.main-menu ul li a {
+	padding: 0 45px;
+	color: #fff;
+	border-right: 1px solid #515151;
+	border-left: 1px solid #515151;
 }
 
 .side-bar{
-	margin: 0px 46px 180px;
-	font: 15px Arial;
+	margin: 0px 46px;
+	font: 14px Arial;
 	width: 240px;
-	color: #656565;
 	border: 1px solid #c8c8c8;
 	border-bottom: 0px solid;
 }
 
-.menu-field2{
-	height: 40px;
+.side-bar ul li a {
+	padding: 10px 15px;
+	color: #656565;
+}
+
+.side-bar ul li {
 	border-bottom: 1px solid #c8c8c8;
-	line-height: 40px;
-	padding: 0 35px;
 }
 
 .image{
@@ -58,37 +82,62 @@ body {
 }
 
 .article{
-	padding-left:350px;
-	padding-right: 50px;
-	font: 15px Arial;
+	width: 680px;
+	clear: both;
+	float: right;
+	padding: 20px;
+	font: 14px Arial;
 	color: #656565;
 	
 }
 
 footer{
-	margin: 60px 46px 0px;
+	clear: both;
+	width: 1000px;
+	margin: 0 auto;
+	padding-right: 15px;
+	position: absolute;
+	left: 30px;
+	bottom: 5px;
 	height: 40px;
+	text-align: right;
 	background-color: #E1E1E1;
-	font: 15px Arial;
+	font: 14px Arial;
 	line-height: 40px;
-    color: #2C2C2C;	
+    color: #000;	
 }
 
-#copyright {
-	margin-left: 105px;
-	padding-right: 20px;
-	
+footer ul li {
+	float: left;
+}
+
+footer ul li a {
+	padding: 0 45px;
+	color: #000;
+}
+
+.copyright {
+	text-align: right;
+    display: block;
+    float: right;
+    width: 170px;
 }
 
 /*Затемнение элементов главного меню при наведении курсора*/
-.menu-field1:hover {
+.main-menu a:hover {
 	background-color: #333333;
 	border-right: 1px solid #999999;
 	border-left: 1px solid #999999;
 }
 
 /*Затемнение элементов бокового меню при наведении курсора*/
-.menu-field2:hover {
+.side-bar a:hover {
+	padding: 10px 25px;
 	background-color: #f9f9f9;
+}
+
+/*Ховер для футера*/
+footer a:hover {
+	text-decoration: underline;
 }
 
