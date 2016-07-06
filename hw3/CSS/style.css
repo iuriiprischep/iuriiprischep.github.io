@@ -65,6 +65,7 @@ a {
 
 .side-bar ul li a {
 	padding: 10px 15px;
+	transition: padding 0.5s;
 	color: #656565;
 }
 
@@ -132,7 +133,8 @@ footer ul li a {
 
 /*Затемнение элементов бокового меню при наведении курсора*/
 .side-bar a:hover {
-	padding: 10px 25px;
+	padding: 10px 35px;
+	transition: padding 0.5s;
 	background-color: #f9f9f9;
 }
 
