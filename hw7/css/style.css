@@ -627,7 +627,7 @@ footer {
 @media screen and (max-width: 480px) {
 
 	.wrapper {
-		width: 320px;
+		width: 280px;
 	}
 
 	.iphone {
@@ -654,9 +654,18 @@ footer {
    		padding: 20px 0;
 	}
 
+	.about-text p {
+    	height: 90px;
+    	overflow: hidden;
+    }
+
 	.starts-cont {
 		height: 200px;
-		overflow-y: hidden;
+	}
+
+	.starts-cont p {
+		height: 220px;
+		overflow: hidden;
 	}
 
 	.for-starts:first-child {
