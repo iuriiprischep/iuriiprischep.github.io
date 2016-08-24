@@ -681,6 +681,10 @@ footer {
 		display: none;
 	}
 
+	.brand {
+		margin: 16px;
+	}
+
 	.second {
 		display: none;
 	}
