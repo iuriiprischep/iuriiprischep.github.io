@@ -337,11 +337,11 @@ background-image: linear-gradient(to bottom, #745082 0%, #33253a 100%);
 }
 
 .brand:first-child {
-	margin-left: 90px;
+	margin-left: 30px;
 }
 
 .brand:last-child {
-	margin-right: 90px;
+	margin-right: 30px;
 }
 
 .brand2 {
@@ -594,7 +594,7 @@ footer {
 	}
 	
 	.brand {
-		margin: 25px;
+		margin: 20px;
 	}
 
 	.brand:first-child {
@@ -687,8 +687,9 @@ footer {
 
 	.designed_by {
     	top: 20%;
-    	right: 35%;
+    	right: 30%;
 	}
+
 
 	.for_footer {
 		display: none;
