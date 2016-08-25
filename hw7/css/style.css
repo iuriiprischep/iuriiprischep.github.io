@@ -404,7 +404,7 @@ background-image: linear-gradient(to bottom, #745082 0%, #33253a 100%);
 
 footer {
 	height: 114px;
-	background: url(../img/bg_footer.png) no-repeat fixed center bottom;
+	background: url(../img/bg_footer_768.png) no-repeat fixed center bottom;
 }
 
 .wr_footer {
@@ -414,9 +414,8 @@ footer {
 
 .for_footer {
 	width: 530px;
-	position: absolute;
-	left: 0px;
-	top: 38%;
+	float: left;
+	padding-top: 40px;
 }
 
 .for_footer a {
@@ -426,9 +425,11 @@ footer {
 }
 
 .designed_by {
-	position: absolute;
+	/*position: absolute;
 	right: 0px;
-	top: 46%;
+	top: 46%;*/
+	float: right;
+	margin-top: 45px;
 	color: #fff;
 	font-size: 12px;
 	text-shadow: 1px 1px 2px #000;
@@ -439,7 +440,7 @@ footer {
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 980px) {
 
 	.logo, nav {
 		float: none;
@@ -463,6 +464,14 @@ footer {
 
 	h3 {
 		font-size: 27px;
+	}
+
+	footer {
+		height: 200px;
+	}
+
+	.for_footer {
+		float: none;
 	}
 }
 
@@ -619,8 +628,9 @@ footer {
 	}
 
 	.designed_by {
-		top: 80%;
-		right: 40%;
+		float: none;
+		margin: 40px auto;
+		text-align: center;
 	}
 }
 
@@ -690,8 +700,8 @@ footer {
 	}
 
 	.designed_by {
-    	top: 20%;
-    	right: 30%;
+    	margin: 0 auto;
+    	padding-top: 40px;
 	}
 
 
