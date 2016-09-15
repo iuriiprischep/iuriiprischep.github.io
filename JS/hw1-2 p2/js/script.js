@@ -9,6 +9,7 @@ var userName = prompt('Введите имя пользователя');
 console.log(arr);
 console.log(userName);
 
+if (userName = 'null') i = -1;
 while (i > -1) {
 	i = i - 1;
 	if (arr[i] != userName) continue;
