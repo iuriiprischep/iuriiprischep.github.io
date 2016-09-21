@@ -1,0 +1,25 @@
+/* hw 3-4 */
+body {
+	width: 700px;
+	margin: 25px auto;
+	border: solid 1px #000;
+}
+.titleClass {
+	text-align: center;
+}
+
+li {
+	list-style: none;
+}
+
+.ulClassAnswer {
+	padding: 20px 10px;
+}
+
+.buttonClass {
+	display: block;
+	height: 45px;
+	width: 350px;
+	background-color: #CFE2F3;
+	margin: 45px auto;
+}
