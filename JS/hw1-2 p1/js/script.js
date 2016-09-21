@@ -1,4 +1,6 @@
 // Возведение в степень
+'use strict';
+(function () {
 do {
 var a = prompt ('Введите целое число, которое нужно возвести в степень');
 } while (isNaN(a) || a!=Math.floor(a))
@@ -30,4 +32,5 @@ function pow(a, n) {
 	}
     console.log('Результат ' + result );
 	alert('Результат = ' + result);
-}
+};
+})();

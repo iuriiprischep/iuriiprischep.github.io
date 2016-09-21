@@ -1,4 +1,6 @@
 // Авторизация
+'use strict';
+(function() {
 var arr = [];
 for (var i = 0; i < 5; i++) {
   arr[i] = prompt ('Введите имя ' + (i+1) );
@@ -19,3 +21,4 @@ while (i > -1) {
 }
 
 if (i == -1) alert('Ошибка! Имя не найдено.');
+})();
