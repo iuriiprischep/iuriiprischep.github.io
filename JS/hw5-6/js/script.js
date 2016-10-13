@@ -15,8 +15,12 @@
 	var iHour = 0;
 	var timerId;
 
+	initTimer ();
+
+	function initTimer() {
 	startClick.addEventListener('click', buttonStart);
 	clearClick.addEventListener('click', buttonClear);	
+	}
 
 	function buttonStart() {
 		if (iStart == 'pause') {
@@ -59,34 +63,40 @@
 			if (iMillisecond < 99) {
 				iMillisecond++;
 				millisecond.innerHTML = iMillisecond;
+				return;
 			} else {
 				iMillisecond = 0;
 				millisecond.innerHTML = '00';
-				if (iSecond < 59) {
-					iSecond++;
-					display(second, iSecond);
-				} else {
-					iSecond = 0;
-					second.innerHTML = '00';
-					if (iMinute < 59) {
-						iMinute++;
-						display(minute, iMinute);
-					} else {
-						iMinute = 0;
-						minute.innerHTML = '00';
-						if (iHour < 99) {
-							iHour++;
-							display(hour, iHour);
-						} else {
-							buttonClear();
-						}
-					}
-				}
+			}
+
+			if (iSecond < 59) {
+				iSecond++;
+				displayTwoDigitNumber(second, iSecond);
+				return;
+			} else {
+				iSecond = 0;
+				second.innerHTML = '00';
+			}
+
+			if (iMinute < 59) {
+				iMinute++;
+				displayTwoDigitNumber(minute, iMinute);
+				return;
+			} else {
+				iMinute = 0;
+				minute.innerHTML = '00';
+			}
+
+			if (iHour < 99) {
+				iHour++;
+				displayTwoDigitNumber(hour, iHour);
+			} else {
+				buttonClear();
 			}
 		}
 	}
 
-	function display(a, b) {
+	function displayTwoDigitNumber(a, b) {
 		if (b < 10) {
 			a.innerHTML = '0' + b;			
 		} else {
