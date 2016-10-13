@@ -2,6 +2,10 @@
 'use strict';
 (function() {
 
+var x = 0;
+var y = 0;
+var parentLi;
+
 var homeWork = {
 
 	addTitle: function(titleText, titleClass) {
@@ -53,35 +57,40 @@ var homeWork = {
 		document.body.appendChild(button);
 		return button;
 	}
+};
 
-}
 
-var x = 0;
-var y = 0;
+function mainFunction() {
+	homeWork.addTitle('Тест по программированию', 'titleClass');
 
-homeWork.addTitle('Тест по программированию', 'titleClass');
+	homeWork.addUl('ulClassQuest', document.body);
 
-homeWork.addUl('ulClassQuest', document.body);
+	addQuestion();
 
-for (var x = 1; x < 4; x++) {
-	var textQuest = x + '.' + 'Вопрос №' + x;
-	var parentLi = document.querySelector('.ulClassQuest');
-	homeWork.addLi('liClassQuest', textQuest, parentLi);
+	homeWork.addButton('buttonClass');
+};
 
-	var parentUl = document.getElementById('li' + x + "" + y);
-	homeWork.addUl('ulClassAnswer', parentUl);
-
-	var parentLi = document.getElementById('ul' + x);
-
-	for (var y = 1; y < 4; y++) {
-		homeWork.addLi('liClassAnswer', " ", parentLi);
-
-		var parentInput = document.getElementById('li' + x + y);
-		homeWork.addInput('inputClass', parentInput);
-		homeWork.addLabel('labelClass', parentInput);
+function addQuestion() {
+	for (x = 1; x < 4; x++) {
+		var textQuest = x + '.' + 'Вопрос №' + x;
+		var parentLi = document.querySelector('.ulClassQuest');
+		homeWork.addLi('liClassQuest', textQuest, parentLi);	
+		var parentUl = document.getElementById('li' + x + "" + y);
+		homeWork.addUl('ulClassAnswer', parentUl);	
+		parentLi = document.getElementById('ul' + x);
+		addAnswer (3, parentLi);
 	};
 };
 
-homeWork.addButton('buttonClass');
+function addAnswer (b, c) {
+	for (y = 1; y < (b + 1); y++) {
+		homeWork.addLi('liClassAnswer', " ", c);
+		var parentInput = document.getElementById('li' + x + y);
+		homeWork.addInput('inputClass', parentInput);
+		homeWork.addLabel('labelClass', parentInput);
+		};
+};
+
+mainFunction();
 
 })();

@@ -23,3 +23,7 @@ li {
 	background-color: #CFE2F3;
 	margin: 45px auto;
 }
+
+input, label, button {
+	cursor: pointer;
+}
