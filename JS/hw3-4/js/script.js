@@ -20,7 +20,6 @@ var homeWork = {
 		ul.classList.add(ulClass);
 		ul.setAttribute('id', 'ul' + x);
 		parent.appendChild(ul);
-		return ul;
 	},
 
 	addLi: function(liClass, liText, parent) {
@@ -29,7 +28,6 @@ var homeWork = {
 		li.setAttribute('id', 'li' + x + "" + y);
 		li.innerHTML = liText;
 		parent.appendChild(li);
-		return li;
 	},
 
 	addInput: function(inputClass, parent) {
@@ -38,7 +36,6 @@ var homeWork = {
 		input.setAttribute('id', x + "" + y);
 		input.classList.add(inputClass);
 		parent.appendChild(input);
-		return input;
 	},
 
 	addLabel: function(labelClass, parent) {
@@ -47,7 +44,6 @@ var homeWork = {
 		label.setAttribute('for', x + "" + y);
 		label.innerHTML = 'Вариант ответа №' + y;
 		parent.appendChild(label);
-		return label;
 	},
 
 	addButton: function(buttonClass) {
@@ -55,7 +51,6 @@ var homeWork = {
 		button.classList.add(buttonClass);
 		button.innerHTML = 'Проверить мои результаты';
 		document.body.appendChild(button);
-		return button;
 	}
 };
 
